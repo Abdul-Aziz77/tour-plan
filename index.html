@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <navbar class="navbar">
+    <header class="navbar">
         <div class="container">
             <div class="navbar-top">
                 <a href="#" class="logo">
                     <img src="img/horizontal-logo.svg" alt="Logo: Beat Tour Plan" class="logo_image">
                 </a>
-                <form action="#" class="search navbar">
+                <form action="#" class="search navbar navbar_search">
                     <input type="text" class="search-input" placeholder="Search Location">
                     <button class="search-button">
                         <img src="img/search.svg" alt="Icon: search">
@@ -27,9 +27,13 @@
                 </a>
                 <!-- /.user -->
             </div>
-            <!-- /.header-top -->
+            <!-- /.navbar-top -->
 
-            <nav class="navbar">
+
+        </div>
+        <!-- /.container -->
+        <div class="navbar-bottom">
+            <div class="container">
                 <ul class="navbar-menu">
                     <li class="navbar-menu_item">
                         <a href="#" class="navbar-menu_link">All Deals</a>
@@ -53,10 +57,11 @@
                         <a href="#" class="navbar-menu_link">Rodrigues</a>
                     </li>
                 </ul>
-            </nav>
-
+                <!-- /.navbar-menu -->
+            </div>
+            <!-- /.container -->
         </div>
-        <!-- /.container -->
-    </navbar>
+        <!-- /.navbar-bottom -->
+    </header>
 </body>
 </html>
