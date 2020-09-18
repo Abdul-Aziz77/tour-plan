@@ -501,8 +501,8 @@ template {
     margin-left: 47px;
   }
   .navbar-menu {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
   .navbar-menu_link {
     font-size: 12px;
@@ -510,6 +510,9 @@ template {
   }
   .search-input {
     max-width: 340px;
+  }
+  .navbar-bottom .container {
+    max-width: 680px;
   }
 }
 
