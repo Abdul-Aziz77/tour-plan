@@ -387,6 +387,10 @@ template {
   margin-left: 108px;
 }
 
+.navbar_search .search-button {
+  cursor: pointer;
+}
+
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -494,11 +498,11 @@ template {
     padding-bottom: 30px;
   }
   .navbar_search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .navbar-menu_link {
     font-size: 12px;
