@@ -8,4 +8,12 @@ var mySwiper = new Swiper('.swiper-container', {
       prevEl: '.slider-button--prev',
     },
     effect: 'fade',
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
   });
+
+  
