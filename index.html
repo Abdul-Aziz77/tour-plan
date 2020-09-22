@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Plan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="navbar">
         <div class="container">
@@ -21,7 +25,7 @@
                         <img src="img/search.svg" alt="Icon: search">
                     </button>
                 </form>
-            
+
                 <a href="#" class="user navbar_user">
                     <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user-avatar">
                     <span class="user_name">Nathan</span>
@@ -117,7 +121,7 @@
                     <!-- Slider main container -->
                     <div class="swiper-container">
                         <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper"  tabindex="0">
+                        <div class="swiper-wrapper" tabindex="0">
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <img src="img/slide_1.jpg" alt="slide">
@@ -133,7 +137,7 @@
                         <button class="slider-button slider-button--prev"></button>
                         <button class="slider-button slider-button--next"></button>
 
-                        
+
                     </div>
                     <!-- /.swiper-container -->
                 </div>
@@ -152,7 +156,7 @@
                                     <img src="img/user.svg" alt="Icon: user" class="booking__icon">
                                     <span class="booking__description">2 x Guests</span>
                                 </div>
-                                
+
                                 <div class="booking__text">
                                     <img src="img/home.svg" alt="Icon: home" class="booking__icon">
                                     <span class="booking__description">1 x Room</span>
@@ -172,7 +176,12 @@
                         <button class="button booking__button">View Other Options</button>
                     </div>
                     <!-- /.booking -->
-                    <div class="map"></div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12305.41681592802!2d-117.92004179772671!3d33.61448051369268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2001d84fc077%3A0x2789366e20c2d26c!2sWoody&#39;s%20Wharf!5e0!3m2!1sru!2sru!4v1600769493693!5m2!1sru!2sru"
+                            width="347" height="213" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
                     <!-- /.map -->
                 </div>
                 <!-- /.hotel-right -->
@@ -185,4 +194,5 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
