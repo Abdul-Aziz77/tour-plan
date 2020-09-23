@@ -13,7 +13,14 @@
             var myMap = new ymaps.Map("map", {
                 center: [41.03550467, 28.98673348],
                 zoom: 15
-            })
+            });
+            myPlacemark = new ymaps.Placemark([41.03550467, 28.98673348], {
+                balloonContent: "улица Улькер, 1B",
+                hintContent: "улица Улькер, 1B"
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        
         }
     </script>
     <link
@@ -197,6 +204,20 @@
         <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <!-- <section class="newsletter">
+        <div class="newsletter-wrapper">
+            <h2 class="newsletter-title newsletter_title">
+                subscribe to our
+                <span class="newsletter-title__strong">Newsletter</span>
+            </h2>
+            <form action="#" class="subscribe newsletter_subscribe">
+                <input type="text" class="subscribe-input" placeholder="Your email address">
+                <button class="subscribe-button">Send</button>
+            </form>
+        </div>
+        
+    </section> -->
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
