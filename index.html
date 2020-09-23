@@ -5,8 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Plan</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1a01ee64-5fa8-4228-a266-b8227908c94c&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [41.03550467, 28.98673348],
+                zoom: 15
+            })
+        }
+    </script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -176,12 +187,7 @@
                         <button class="button booking__button">View Other Options</button>
                     </div>
                     <!-- /.booking -->
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12305.41681592802!2d-117.92004179772671!3d33.61448051369268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2001d84fc077%3A0x2789366e20c2d26c!2sWoody&#39;s%20Wharf!5e0!3m2!1sru!2sru!4v1600769493693!5m2!1sru!2sru"
-                            width="100%" height="213" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
-                    </div>
+                    <div id="map"></div>
                     <!-- /.map -->
                 </div>
                 <!-- /.hotel-right -->
