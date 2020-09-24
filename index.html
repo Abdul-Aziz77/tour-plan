@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Plan</title>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=1a01ee64-5fa8-4228-a266-b8227908c94c&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1a01ee64-5fa8-4228-a266-b8227908c94c&lang=ru_RU"
+        type="text/javascript">
+        </script>
     <script type="text/javascript">
         ymaps.ready(init);
-        function init(){
+        function init() {
             var myMap = new ymaps.Map("map", {
                 center: [41.03550467, 28.98673348],
                 zoom: 15
@@ -20,7 +21,7 @@
             });
 
             myMap.geoObjects.add(myPlacemark);
-        
+
         }
     </script>
     <link
@@ -43,7 +44,6 @@
                         <img src="img/search.svg" alt="Icon: search">
                     </button>
                 </form>
-
                 <a href="#" class="user navbar_user">
                     <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user-avatar">
                     <span class="user_name">Nathan</span>
@@ -135,31 +135,30 @@
             </div>
             <!-- /.hotel-info -->
             <div class="hotel-grid">
-                <div class="slider hotel__slider">
-                    <!-- Slider main container -->
-                    <div class="swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper" tabindex="0">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <img class="swiper-slide_image" src="img/slide_1.jpg" alt="slide">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="swiper-slide_image" src="img/slide_2.jpg" alt="slide">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="swiper-slide_image" src="img/slide_3.jpg" alt="slide">
-                            </div>
+
+                <!-- Slider main container -->
+                <div class="swiper-container hotel-slider hotel__slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper" tabindex="0">
+                        <!-- Slides -->
+                        <div class="swiper-slide hotel-slider__item">
+                            <img class="swiper-slide_image" src="img/slide_1.jpg" alt="slide">
                         </div>
-                        <!-- If we need navigation buttons -->
-                        <button class="slider-button slider-button--prev"></button>
-                        <button class="slider-button slider-button--next"></button>
-
-
+                        <div class="swiper-slide hotel-slider__item">
+                            <img class="swiper-slide_image" src="img/slide_2.jpg" alt="slide">
+                        </div>
+                        <div class="swiper-slide hotel-slider__item">
+                            <img class="swiper-slide_image" src="img/slide_3.jpg" alt="slide">
+                        </div>
                     </div>
-                    <!-- /.swiper-container -->
+                    <!-- If we need navigation buttons -->
+                    <button class="hotel-slider__button hotel-slider__button--prev"></button>
+                    <button class="hotel-slider__button hotel-slider__button--next"></button>
+
+
                 </div>
-                <!-- /.slider -->
+                <!-- /.swiper-container -->
+
                 <div class="hotel-right">
                     <div class="booking">
                         <div class="booking__info">
@@ -204,7 +203,7 @@
         <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    <!-- <section class="newsletter">
+    <section class="newsletter">
         <div class="newsletter-wrapper">
             <h2 class="newsletter-title newsletter_title">
                 subscribe to our
@@ -215,8 +214,52 @@
                 <button class="subscribe-button">Send</button>
             </form>
         </div>
-        
-    </section> -->
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">What people thinks about us</h2>
+            <div class="swiper-container reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Megan Fox</h3>
+                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                </div>
+                                <!-- /.reviews-slider__rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. They
+                                welcome us very well. Issue was only that Lift was not in working and we were allotted
+                                to 3rd floor and amenities articles were in corner of gallery which were giving bad
+                                feeling. Breakfast was good and support of the staff was also very nice. Location is not
+                                good as per atmosphere, it is very nearby most of the popular places but self location
+                                in a narrow street is not good. Overall it was a good experience and could recommend.
+                            </p>
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                </div>
+                <!-- /.swiper-wrapper -->
+
+                <button class="reviews-slider__button reviews-slider__button--prev"></button>
+                <button class="reviews-slider__button reviews-slider__button--next"></button>
+            </div>
+            <!-- /.swiper-container -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
