@@ -807,6 +807,148 @@ template {
   overflow: hidden;
 }
 
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+}
+
+.packages-grid .packages-grid-card_item {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+
+.packages .packages-grid-card {
+  height: 500px;
+  background-color: #0A223D;
+  color: #fff;
+}
+
+.packages .wrapper {
+  margin-left: 32px;
+}
+
+.packages-title {
+  margin: 0;
+  padding: 30px 0 23px 0;
+}
+
+.packages .content-info {
+  margin-bottom: 11px;
+}
+
+.packages .content-icon {
+  vertical-align: middle;
+}
+
+.packages .content-text {
+  vertical-align: middle;
+  margin-left: 12px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages .old-price {
+  display: block;
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: line-through;
+}
+
+.packages .new-price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages .content-price {
+  max-width: 295px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+}
+
+.packages .content-button {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: #ec1f46;
+  padding: 11px 26px;
+  border-radius: 4px;
+}
+
+.packages .packages_image {
+  height: 500px;
+}
+
+.packages .packages-image {
+  position: relative;
+}
+
+.packages .packages-offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  border-bottom-right-radius: 4px;
+  padding: 4px 9px;
+  border-radius: 0 4px 4px 0;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  background-color: #ec1f46;
+}
+
+.packages .packages-offer_big {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.packages .stars-packages {
+  margin-top: 40px;
+}
+
+.packages .packages_title {
+  padding-top: 0;
+  margin-top: 5px;
+}
+
+.packages .packages-text {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 40px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
