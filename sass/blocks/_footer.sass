@@ -9,6 +9,7 @@
         grid-template-columns: 1fr 1fr 300px 195px
         grid-gap: 20px
         grid-auto-rows: minmax(40px, min-content)
+        margin-bottom: 95px
     &__logo
         width: 166px
         grid-row: 1 / 3
@@ -105,13 +106,14 @@
         font-size: 12px
         line-height: 15px
         color: #E0E0E0
+
 .footer-main
-    padding-top: 95px
-    display: flex
-    justify-content: flex-end
-    align-items: center
+    display: grid
+    grid-template-columns: 2fr 2fr 1fr
     .bottom-content
-        margin-right: 277px
+        grid-column: 2 / 3
+    .bottom-image
+        grid-column-end: 5
     .bottom-logo
         width: 136px
         height: 22px
@@ -120,7 +122,6 @@
             font-weight: normal
             font-size: 12px
             line-height: 15px
-            margin-right: 14px
-            
-    
+            margin-right: 12px
+
 
