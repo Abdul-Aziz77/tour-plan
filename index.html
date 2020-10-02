@@ -19,13 +19,13 @@
                 <a href="#" class="logo">
                     <img src="img/horizontal-logo.svg" alt="Logo: Beat Tour Plan" class="logo_image">
                 </a>
-                <form action="#" class="search navbar navbar_search">
+                <form action="#" class="search navbar navbar_search--mobile--hidden"> <!--navbar_user--mobile_hidden-->
                     <input type="text" class="search-input" placeholder="Search Location">
                     <button class="search-button">
                         <img src="img/search.svg" alt="Icon: search">
                     </button>
                 </form>
-                <a href="#" class="user navbar_user">
+                <a href="#" class="user navbar_user navbar_user--mobile--hidden"> <!--navbar_user--mobile_hidden-->
                     <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user-avatar">
                     <span class="user_name">Nathan</span>
                 </a>
@@ -44,6 +44,20 @@
         <div class="navbar-bottom">
             <div class="container">
                 <ul class="navbar-menu">
+                    <li class="navbar-menu_item navbar-menu_item--mobile--visible"> <!--navbar-menu_item--mobile_visible-->
+                        <a href="#" class="user navbar_user--mobile--visible">
+                            <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user-avatar">
+                            <span class="user_name user_name--light">Nathan</span>
+                        </a>
+                    </li>
+                    <li class="navbar-menu_item navbar-menu_item--mobile--visible">
+                        <form action="#" class="search navbar_search--mobile--visible">
+                            <input type="text" class="search-input" placeholder="Search Location">
+                            <button class="search-button">
+                                <img src="img/search.svg" alt="Icon: search">
+                            </button>
+                        </form>
+                    </li>
                     <li class="navbar-menu_item">
                         <a href="#" class="navbar-menu_link">All Deals</a>
                     </li>
