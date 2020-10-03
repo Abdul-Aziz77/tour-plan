@@ -805,7 +805,7 @@ template {
 }
 
 .map {
-  width: 347px;
+  width: 100%;
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
@@ -1700,6 +1700,9 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .navbar-bottom {
+    overflow: scroll;
   }
   .menu-button {
     display: -webkit-box;
