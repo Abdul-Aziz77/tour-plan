@@ -27,7 +27,7 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.ru'; // SMTP сервера вашей почты
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'amilbrodi704@gmail.com'; // Логин на почте
     $mail->Password   = 'ozilmesut0036010'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
@@ -35,7 +35,7 @@ try {
     $mail->setFrom('amilbrodi704@gmail.com', 'Амиль Броди'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('agerzeliev@yandex.ru');
+    $mail->addAddress('agbdel.gerze@gmail.com');
 
 // Отправка сообщения
 $mail->isHTML(true);
@@ -52,4 +52,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thankyou.html');
