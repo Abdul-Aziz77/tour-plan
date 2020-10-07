@@ -1593,6 +1593,10 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog {
+    width: 400px;
+    padding: 33px 66px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1729,9 +1733,6 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .modal__dialog {
-    padding: 33px 66px;
   }
 }
 
@@ -1939,8 +1940,30 @@ template {
             justify-content: space-between;
   }
   .modal__dialog {
-    width: 80%;
-    height: auto;
+    width: 95%;
+    padding: 33px 33px;
+  }
+  .modal-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .modal__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    width: 100%;
   }
 }
 
@@ -2075,6 +2098,32 @@ template {
   }
   .bottom-content {
     margin-bottom: 10px;
+  }
+  .modal__dialog {
+    width: 95%;
+    padding: 33px 33px;
+  }
+  .modal-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .modal__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

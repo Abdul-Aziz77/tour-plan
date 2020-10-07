@@ -15,6 +15,10 @@
     .footer
         &__input
             flex-basis: 100%
+    .modal
+        &__dialog
+            width: 400px
+            padding: 33px 66px
 @media  ( max-width: 992px)
     .container,
     .newsletter-wrapper
@@ -104,10 +108,6 @@
         display: flex
         align-items: center
         justify-content: space-between
-    .modal
-        &__dialog
-            width: 
-            padding: 33px 66px
 @media  (max-width: 768px)
     .container
         max-width: 576px
@@ -246,11 +246,25 @@
         display: flex
         align-items: center
         justify-content: space-between
+    // .modal
+    //     &__dialog
+    //         width: 400px
+    //         padding: 33px 33px
     .modal
         &__dialog
-            width: 80%
-            height: auto
-           
+            width: 95%
+            padding: 33px 33px
+    .modal-wrapper
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column-reverse
+    .modal__info
+        display: flex
+        align-self: flex-start
+        margin-bottom: 15px
+    .modal__button
+        width: 100%
+    
 @media  (max-width: 576px)
     .logo
         width: 99px
@@ -328,6 +342,21 @@
         flex-wrap: wrap
     .bottom-content
         margin-bottom: 10px
+    .modal
+        &__dialog
+            width: 95%
+            padding: 33px 33px
+    .modal-wrapper
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column-reverse
+    .modal__info
+        display: flex
+        align-self: flex-start
+        margin-bottom: 15px
+    .modal__button
+        width: 100%
+
     
  
     
