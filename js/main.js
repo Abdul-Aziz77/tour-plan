@@ -83,5 +83,5 @@ var reviewsSlider = new Swiper('.reviews-slider', {
       },
     });
   });
-  
+  AOS.init();
 });
