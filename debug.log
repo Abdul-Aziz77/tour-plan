@@ -1,0 +1,18 @@
+[1007/182512.832:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1008/071723.458:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1009/134356.413:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1009/134356.409:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1009/134356.493:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1009/134356.567:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1009/134358.380:ERROR:exception_snapshot_win.cc(99)] thread ID 9832 not found in process
+[1009/134356.486:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1009/134356.597:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1009/134356.413:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1009/134358.264:ERROR:exception_snapshot_win.cc(99)] thread ID 12556 not found in process
+[1009/134358.265:ERROR:exception_snapshot_win.cc(99)] thread ID 11204 not found in process
+[1009/134356.535:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1009/134358.380:ERROR:exception_snapshot_win.cc(99)] thread ID 5996 not found in process
+[1009/134358.380:ERROR:exception_snapshot_win.cc(99)] thread ID 4140 not found in process
+[1009/134358.380:ERROR:exception_snapshot_win.cc(99)] thread ID 10260 not found in process
+[1009/134358.380:ERROR:exception_snapshot_win.cc(99)] thread ID 15704 not found in process
+[1009/134358.380:ERROR:exception_snapshot_win.cc(99)] thread ID 8680 not found in process

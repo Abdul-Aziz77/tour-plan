@@ -66,6 +66,22 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
-
-
+  // Обработка форм
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+        },
+        phone: {
+          required: "Please enter your phone number",
+        },
+        email: {
+          required: "Please enter your email",
+        },
+      },
+    });
+  });
+  
 });
