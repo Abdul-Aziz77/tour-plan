@@ -470,6 +470,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu_link:hover {
+  text-decoration: underline;
+}
+
 .navbar-menu_item--mobile--visible {
   display: none;
 }
@@ -510,6 +514,10 @@ template {
   background-color: #ec1f46;
 }
 
+.search-button:hover {
+  background-color: #A81833;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -542,7 +550,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 18px 0;
+  padding: 19px 0 18px;
   margin: 0;
   list-style: none;
 }
@@ -563,7 +571,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 10px;
   padding-bottom: 70px;
 }
 
@@ -843,15 +851,18 @@ template {
 
 .booking__button {
   width: 100%;
-  min-height: 45px;
+  height: 45px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 19px;
   border-radius: 4px;
   background-color: #ec1f46;
   border: none;
   color: #fff;
   cursor: pointer;
+}
+
+.booking__button:hover {
+  background-color: #A81833;
 }
 
 .map {
@@ -1006,6 +1017,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
+  max-height: 260px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1044,6 +1056,7 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 9px;
 }
 
 .newsletter-title__strong {
@@ -1080,10 +1093,17 @@ template {
   right: 0;
   top: 0;
   height: 100%;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
   border: none;
   color: #fff;
   cursor: pointer;
   background-color: #ec1f46;
+}
+
+.subscribe-button:hover {
+  background-color: #A81833;
 }
 
 .reviews {
@@ -1097,7 +1117,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin: 0 0 70px 0;
 }
 
 .reviews-slider__item {
@@ -1158,12 +1178,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 18px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 18px;
 }
 
 .reviews-slider__profile {
@@ -1221,8 +1241,9 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 160%;
+  line-height: 18px;
   text-align: justify;
+  line-height: 160%;
 }
 
 .activities {
@@ -1310,6 +1331,10 @@ template {
   background-color: #ec1f46;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: #A81833;
 }
 
 .footer {
@@ -1451,6 +1476,10 @@ template {
   color: inherit;
 }
 
+.footer__link:hover {
+  text-decoration: underline;
+}
+
 .footer__input {
   width: 100%;
 }
@@ -1473,6 +1502,19 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer-contact__link {
+  display: inline-block;
+}
+
+.footer-contact__link:hover {
+  -webkit-text-decoration: underlinek;
+          text-decoration: underlinek;
+}
+
+.footer__button:hover {
+  background-color: #A81833;
 }
 
 .footer-main {
@@ -1503,6 +1545,10 @@ template {
   font-size: 12px;
   line-height: 15px;
   margin-right: 12px;
+}
+
+.footer-main .bottom-text:hover {
+  text-decoration: underline;
 }
 
 .modal__overlay {
@@ -1939,7 +1985,6 @@ template {
             transform: translate(99%, 0);
   }
   .activities {
-    padding-top: 40px;
     padding-bottom: 60px;
   }
   .card {
@@ -1968,7 +2013,7 @@ template {
             justify-content: space-between;
   }
   .modal__dialog {
-    width: 95%;
+    width: 80%;
     padding: 33px 33px;
   }
   .modal-wrapper {
@@ -1992,6 +2037,9 @@ template {
   }
   .modal__button {
     width: 100%;
+  }
+  .modal__form {
+    overflow: scroll;
   }
 }
 
@@ -2026,7 +2074,13 @@ template {
     margin-left: 0;
   }
   .newsletter_title {
+    font-size: 20px;
+    line-height: 25px;
     margin-bottom: 37px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
   }
   .subscribe {
     width: 100%;
@@ -2128,7 +2182,7 @@ template {
     margin-bottom: 10px;
   }
   .modal__dialog {
-    width: 95%;
+    width: 90%;
     padding: 33px 33px;
   }
   .modal-wrapper {

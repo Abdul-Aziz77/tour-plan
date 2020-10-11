@@ -16,3 +16,4 @@
 [1009/134358.380:ERROR:exception_snapshot_win.cc(99)] thread ID 10260 not found in process
 [1009/134358.380:ERROR:exception_snapshot_win.cc(99)] thread ID 15704 not found in process
 [1009/134358.380:ERROR:exception_snapshot_win.cc(99)] thread ID 8680 not found in process
+[1011/055259.953:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
