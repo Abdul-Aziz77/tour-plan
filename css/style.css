@@ -717,20 +717,33 @@ template {
 .rating {
   max-width: 65px;
   min-width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   color: #fff;
+  font-weight: 700;
   background-color: #ec1f46;
   border-radius: 4px;
+  padding: 7px 6px;
 }
 
 .rating_text {
   font-size: 8px;
   line-height: 10px;
+  font-weight: 600;
 }
 
 .rating_counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
 }
 
 .booking {
@@ -1017,7 +1030,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  max-height: 260px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1056,7 +1068,7 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 9px;
+  margin: 0;
 }
 
 .newsletter-title__strong {
@@ -1179,11 +1191,13 @@ template {
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
   left: 18px;
+  background-position: center;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
   right: 18px;
+  background-position: center;
 }
 
 .reviews-slider__profile {
@@ -1244,6 +1258,10 @@ template {
   line-height: 18px;
   text-align: justify;
   line-height: 160%;
+}
+
+.reviews .reviews-slider__rating {
+  font-size: 6px;
 }
 
 .activities {
@@ -1434,6 +1452,7 @@ template {
   font-size: 18px;
   line-height: 23px;
   margin: 0 0 16px 0;
+  text-transform: uppercase;
 }
 
 .footer__title--inline {
@@ -1504,15 +1523,6 @@ template {
   color: #E0E0E0;
 }
 
-.footer-contact__link {
-  display: inline-block;
-}
-
-.footer-contact__link:hover {
-  -webkit-text-decoration: underlinek;
-          text-decoration: underlinek;
-}
-
 .footer__button:hover {
   background-color: #A81833;
 }
@@ -1547,7 +1557,18 @@ template {
   margin-right: 12px;
 }
 
-.footer-main .bottom-text:hover {
+.footer-contact_item {
+  display: inline-block;
+}
+
+.footer-contact-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-contact-link:hover {
   text-decoration: underline;
 }
 
@@ -1640,6 +1661,18 @@ template {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-menu_link:hover {
+    text-decoration: none;
+  }
+  .search-button:hover, .booking__button:hover, .subscribe-button:hover, .card__button:hover, .footer__button:hover {
+    background-color: #ec1f46;
+  }
+  .footer a:hover {
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1741,15 +1774,18 @@ template {
   }
   .card {
     width: 340px;
-    height: 230px;
+    height: 255px;
   }
   .card__title {
     font-size: 16px;
     line-height: 20px;
   }
+  .footer {
+    padding: 73px 0 33px;
+  }
   .footer-wrapper {
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 40px;
   }
   .footer__input-group {
@@ -1803,6 +1839,14 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .footer__logo {
+    width: 94px;
+    height: 110px;
+  }
+  .modal__dialog {
+    overflow: scroll;
+    max-height: 100vh;
   }
 }
 
@@ -2038,12 +2082,12 @@ template {
   .modal__button {
     width: 100%;
   }
-  .modal__form {
-    overflow: scroll;
-  }
 }
 
 @media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
   .logo {
     width: 99px;
   }
@@ -2056,12 +2100,9 @@ template {
   .search {
     max-width: 243px;
   }
-  .newsletter {
-    padding: 66px 0 83px 0;
-  }
   .newsletter-wrapper {
     max-width: 576px;
-    width: 92%;
+    width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2116,6 +2157,10 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__legal {
     -ms-grid-row: 3;
@@ -2177,6 +2222,10 @@ template {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .footer__social-links {
+    margin-top: 27px;
+    margin-bottom: -10px;
   }
   .bottom-content {
     margin-bottom: 10px;

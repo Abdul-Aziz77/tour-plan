@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
         rel="stylesheet">
@@ -253,14 +255,20 @@
                 </div>
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
-                    <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-                        <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
-                        <button class="button footer__button" type="submit">Send</button>
-                        <span class="footer__info">* Required Fields</span>
-                    </form>
+                    <div class="footer__contact-form">
+                        <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+                        <form action="send.php" method="POST" class="footer__form form">
+                            <div class="footer__input-group">
+                                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+                            </div>
+                            <div class="footer__input-group">
+                                <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+                            </div>
+                            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
+                            <button class="button footer__button" type="submit">Send</button>
+                            <span class="footer__info">* Required Fields</span>
+                        </form>
+                    </div>
                 </div>
                 <!-- /.footer__contact-form -->
             </div>
@@ -281,28 +289,6 @@
         </div>
         <!-- /.container -->
     </footer>
-    <div class="modal">
-        <div class="modal__overlay"></div>
-        <!-- /.modal__overlay -->
-        <div class="modal__dialog">
-            <a href="#" class="modal__close">
-                <img src="img/close.svg" alt="Icon: close">
-            </a>
-            <h3 class="modal__title modal__title--mb-3">Booking</h3>
-            <form action="#" class="modal__form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name*">
-                <input type="text" class="input modal__input" placeholder="Phone Number*">
-                <input type="text" class="input modal__input" placeholder="Email*">
-                <textarea class="message modal__message" placeholder="Message"></textarea>
-                <div class="modal-wrapper">
-                    <button class="button modal__button" type="submit">Send</button>
-                    <span class="modal__info">* Required Fields</span>
-                </div>
-            </form>
-        </div>
-        <!-- /.modal__dialog -->
-    </div>
-    <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
